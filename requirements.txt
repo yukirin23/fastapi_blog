@@ -1,4 +1,8 @@
-fastapi==0.52.0
+fastapi>=0.64.0
 uvicorn
 motor
 sqlalchemy
+passlib
+bcrypt
+python-jose
+python-multipart
