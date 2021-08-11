@@ -29,9 +29,9 @@ jobs:
     - name: Check docker installed or not
       run: docker run hello-world
     - name: push to docker Hub
-      uses: docker/build-push-action@v2.6.1
+      uses: docker/build-push-action@v2
       with:
         username: $({ secret.DOCKER_USERNAME })
         password: $({ secret.DOCKER_PASSWORD })
-        repository: docker push bigsaputro/fastapi-blog
+        repository: bigsaputro/fastapi-blog
         tag_with_ref: true
